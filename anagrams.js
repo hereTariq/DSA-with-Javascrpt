@@ -4,16 +4,15 @@
 
 function findAnagram(str1, str2){
 
-    // if both strings length not is equal then obviously they can't be anagram
+    // if both strings length are not equal then obviously they can't be anagram
     if(str1.length !== str2.length){
         return false;
     }
-
     // initializing the counter object
     let counterObject = {}
 
     // using for...of loop => To iterate the first string
-    // strong the character into object
+    // storing the characters and it's occurrence into object
     for(let char of str1){
         // if char already exists in object increment by 1
         // and if not initialize to 1
