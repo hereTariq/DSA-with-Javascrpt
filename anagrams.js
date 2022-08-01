@@ -13,12 +13,11 @@ function findAnagram(str1, str2){
 
     // using for...of loop => To iterate the first string
     // storing the characters and it's occurrence into object
-    for(let char of str1){
+    for(let char of str1) {
         // if char already exists in object increment by 1
         // and if not initialize to 1
         counterObject[char] = ++counterObject[char] || 1;
     }
-    
     for(let char of str2){
         // if char is not present in second string return false
         if(!counterObject[char])
@@ -27,10 +26,7 @@ function findAnagram(str1, str2){
         else
             counterObject[char] -= 1;
     }
-    
-
     return true
-
 }
 
 console.log(findAnagram("life","file"));
