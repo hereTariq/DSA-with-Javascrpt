@@ -29,7 +29,7 @@ function romanToInteger(romanString){
 //    iterating through all the character of the romanString
     let integerSum = 0;
     for(let i = 0; i < romanString.length; i++){
-        // comparing first character with second character in the string it first character is smaller than second then we'll subtract it
+        // comparing first character with second character in the string, if first character is smaller than second then we'll subtract it and then add to the integerSum variable
         // otherwise directly add it to the integerSum variable
         // all the comparison done by the romanNumbers object
         if(romanNumbers[romanString[i]] < romanNumbers[romanString[i + 1]]){
